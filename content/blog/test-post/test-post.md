@@ -7,7 +7,7 @@ date: "2020-05-01T22:12:03.284Z"
 
 > this is a test post
 
-![Tes](./test.png)
+![Test](./test.png)
 
 ```html
 <lol></lol>
