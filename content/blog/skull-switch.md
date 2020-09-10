@@ -8,4 +8,5 @@ description: Physical Computing Week 1
 
 
 
-`video: U8n5ybLFNSA`
+`video: https://www.youtube.com/embed/2Xc9gXyf2G4`
+
