@@ -20,8 +20,8 @@ For the custom switch I used a skull Viola He and I found on the floor. A simple
 
 ![gluing the switch to the back of the skull](../assets/img_8553.jpeg "gluing skull switch")
 
-Final result: a skull that turns on an LED when the jaw opens.
-
 ![skull switch](../assets/img_8550.jpeg "skull switch")
+
+Final result: a skull that turns on an LED when the jaw opens.
 
 `video: https://youtu.be/U8n5ybLFNSA`
