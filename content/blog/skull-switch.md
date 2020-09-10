@@ -4,6 +4,8 @@ date: 2020-09-10T14:20:24.132Z
 title: Skull Switch
 description: Physical Computing Week 1
 ---
+*Physical Computing Week 1*
+
 I did not have a DC Jack component when I worked on this lab and so I powered my circuit from my Arduino Uno instead. This could have been achieved by either taking power from the 5V output or the Vin output (which outputs at the same voltage as the DC power outlet that is plugged into the Arduino Uno - in my case 12V). I used the Vin Output so that I could include the voltage regulator into my circuit (voltage regulator wouldn't be required if I had just used the 5V output.
 
 ![wiring in the voltage regulator](../assets/img_8546.jpeg "voltage regulator wiring")
