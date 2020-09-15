@@ -14,11 +14,11 @@ With added subdivisions - increasing the grid resolution to 6x10 - we are able t
 
 ![get out with 6x10 grid overlay](../assets/getoutgrid6x10.jpg "get out grid 6x10")
 
-## Font Faces, Color & Negative Space
-
 ![title main font](../assets/titlefont.jpg "title font 1")
 
 ![title secondary font](../assets/titlefont2.jpg "title font 2")
+
+## Font Faces, Color & Negative Space
 
 The fonts are similar, block-like styles with the main title font being thicker and more impactful. Placement of the text around the title also serves as a reinforcement and from a distance would be seen more as an underline text-decoration rather than text in its own right.
 
