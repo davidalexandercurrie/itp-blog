@@ -22,6 +22,6 @@ With added subdivisions - increasing the grid resolution to 6x10 - we are able t
 
 ![title secondary font](../assets/titlefont2.jpg "title font 2")
 
-The fonts are similar, block-like styles with the main title font being thicker and more impactful. Placement of the text around the title also serves as a reinforcement and from a distance would be seen more as an underline text decoration rather than text in its own right.
+The fonts are similar, block-like styles with the main title font being thicker and more impactful. Placement of the text around the title also serves as a reinforcement and from a distance would be seen more as an underline text-decoration rather than text in its own right.
 
-The contrast of the black and white background and the inverted text serves functionally to allow the words 'get out' to be written without a space in-between and maintain legibility. The stark contrast between black and white also makes reference to the strong themes of systemic racism that are portrayed throughout the film.
+The background and text act as negative space to further enhance our view point of the extremely distraught man held in place by fear. The text is enveloped by inverted black & white serving functionally to allow the words 'get out' to be written without a space in-between and maintain legibility. The stark contrast between black and white also makes reference to the strong themes of systemic racism that are portrayed throughout the film.
