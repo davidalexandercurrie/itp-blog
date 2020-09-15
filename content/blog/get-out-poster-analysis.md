@@ -4,8 +4,6 @@ date: 2020-09-14T20:42:32.634Z
 title: Get Out Poster Analysis
 description: Visual Language Week 1
 ---
-# Get Out Poster Analysis
-
 ## Layout
 
 The poster layout fits in its simplest form to a 3x5 overlay. Seeing the different elements of the poster conforming to the grid reminds me of the structure of a bar of music. The title sits along the bottom of the first row announcing loudly the first beat of the bar and the name of the film.
