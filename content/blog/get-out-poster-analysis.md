@@ -4,8 +4,6 @@ date: 2020-09-14T20:42:32.634Z
 title: Get Out Poster Analysis
 description: Visual Language Week 1
 ---
-# Get Out Poster Analysis
-
 ## Layout
 
 The poster layout fits in its simplest form to a 3x5 overlay. Seeing the different elements of the poster conforming to the grid reminds me of the structure of a bar of music. The title sits along the bottom of the first row announcing loudly the first beat of the bar and the name of the film.
@@ -16,11 +14,11 @@ With added subdivisions - increasing the grid resolution to 6x10 - we are able t
 
 ![get out with 6x10 grid overlay](../assets/getoutgrid6x10.jpg "get out grid 6x10")
 
-## Font Faces, Color & Negative Space
-
 ![title main font](../assets/titlefont.jpg "title font 1")
 
 ![title secondary font](../assets/titlefont2.jpg "title font 2")
+
+## Font Faces, Color & Negative Space
 
 The fonts are similar, block-like styles with the main title font being thicker and more impactful. Placement of the text around the title also serves as a reinforcement and from a distance would be seen more as an underline text-decoration rather than text in its own right.
 
