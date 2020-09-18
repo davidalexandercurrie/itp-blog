@@ -21,7 +21,26 @@ Here I wired up the circuit with the speaker. It wasn't working at first and onl
 
 I put 5 years of sonic arts education to work in the following two sound works for 8 Ohm speaker.
 
+
 `youtube: https://www.youtube.com/watch?v=sWbjmmYuFiU`
+
+Here is the code. It repeatedly randomizes the note pitch playing each note for 60ms and then passing 120ms of silence.
+
+```c
+void setup() {
+  Serial.begin(9600);
+  pinMode(3, OUTPUT);   // set the yellow LED pin to be an output
+}
+
+void loop() {
+   Serial.println("This is a nice piece of music");
+   tone(3, 110 * random(1, 6));    // turn on the first speaker to 440 Hz
+   delay(60);
+   noTone(3);
+   delay(120);
+}
+```
+
 
 `youtube: https://www.youtube.com/watch?v=Biv35e6tUcg`
 
