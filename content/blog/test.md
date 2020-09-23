@@ -19,10 +19,10 @@ This boarding pass will never be printed but it was still a very valuable exerci
 
 For the second part of this week's assignment I created **_THREE EXPRESSIVE WORDS_**. I was nice to see how simple ideas, often using only text, could add to the communication of an idea. I think _Double Bass_ was the most successful. Idea 2 fell a bit short and idea 3 may make sense in some contexts.
 
-![text experiment 1](../assets/visual-language/week-2/week2-4.png "text1")
+![text experiment 3](../assets/visual-language/week-2/week2-6.png "text1")
 
-![text experiment 2](../assets/visual-language/week-2/week2-5.png "text2")
+![text experiment 1](../assets/visual-language/week-2/week2-4.png "text2")
 
-![text experiment 3](../assets/visual-language/week-2/week2-6.png "text3")
+![text experiment 2](../assets/visual-language/week-2/week2-5.png "text3")
 
 Special thanks to Viola, Ahn, & Phillip for all their help with getting me up and running with Illustrator as well as giving insight from their design backgrounds. Their comments and suggestions gave me a lot to think about and helped me engage more in this area that is very much out of my comfort zone.
