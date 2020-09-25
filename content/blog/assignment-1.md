@@ -6,7 +6,7 @@ description: Audio Experiments with distance sensor & accelerometer
 ---
 Proposal for assignment 1: a musical instrument combining accelerometer, gyroscope, and ultrasonic distance sensor.
 
-Note: we are using the built in accelerometer and gyroscope. \
+Note: we are using the built in accelerometer and gyroscope.
 Library: <https://github.com/arduino-libraries/Arduino_LSM6DS3>
 
 ![Schematic of distance sensor and speaker](../assets/project-1.png "Project 1 Schematic")
