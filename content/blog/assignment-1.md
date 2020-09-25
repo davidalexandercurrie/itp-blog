@@ -118,9 +118,7 @@ void loop() {
 
 `youtube: LrzWrm2YviI`
 
-``
-
-Ideas to expand this experiment: 
+Other possible inclusions: 
 
 1. Sound synthesis with Mozzi library <https://sensorium.github.io/Mozzi/>
 2. Use Max or another tool to handle audio <https://cycling74.com/products/max/>
