@@ -12,7 +12,7 @@ Library: <https://github.com/arduino-libraries/Arduino_LSM6DS3>
 
 ![Schematic of distance sensor and speaker](../assets/project-1.png "Project 1 Schematic")
 
-### Audio mapping code
+Audio mapping
 ```c
 int melody[] = {
   NOTE_C4, NOTE_G3, NOTE_G3, NOTE_A3, NOTE_G3, 0, NOTE_B3, NOTE_C4
