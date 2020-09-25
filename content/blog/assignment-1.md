@@ -116,3 +116,11 @@ void loop() {
 `youtube: gjYilf5iATc`
 
 `youtube: LrzWrm2YviI`
+
+``
+
+Ideas to expand this experiment: 
+
+1. Sound synthesis with Mozzi library <https://sensorium.github.io/Mozzi/>
+2. Use Max or another tool to handle audio <https://cycling74.com/products/max/>
+3. Use Wekinator to control mappings <http://www.wekinator.org/>
