@@ -124,3 +124,4 @@ Ideas to expand this experiment:
 1. Sound synthesis with Mozzi library <https://sensorium.github.io/Mozzi/>
 2. Use Max or another tool to handle audio <https://cycling74.com/products/max/>
 3. Use Wekinator to control mappings <http://www.wekinator.org/>
+4. Add an Amplifier to the circuit for more volume <https://components101.com/modules/pam8403-stereo-audio-amplifier-module>
