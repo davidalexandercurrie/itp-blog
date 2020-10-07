@@ -36,6 +36,6 @@ I actually really liked this design but at the time felt as though there was too
 
 Here is the final animated version. I've had a lot of comments to keep the text inside the box at the bottom so maybe that would have been better. The idea of having the text outside of the box was to give a feeling of layering with the moving box, waving lines and the text that is locked in place.
 
-The code can be found [here](https://github.com/davidalexandercurrie/itp-poster)
+The code can be found [here](https://github.com/davidalexandercurrie/itp-poster/blob/main/sketch.js)
 
 <iframe style="border: none" src="https://davidalexandercurrie.github.io/itp-poster/" width="425" height="600"></iframe>
