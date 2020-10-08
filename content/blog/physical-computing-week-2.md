@@ -1,8 +1,8 @@
 ---
 path: physical-computing-week-2
 date: 2020-09-18T04:01:37.594Z
-title: Physical Computing Week 2
-description: Labs
+title: Labs
+description: Physical Computing Week 2
 ---
 I enjoyed this weeks labs. I spent a lot of time going through all the reading materials and particularly enjoyed reading about how different variable types are stored in memory. There was a lot of time spent troubleshooting. I forgot for the second week in a row that the power rails on my breadboard are not connected all the way along. There is a small gap in the middle between the top and bottom halves. Viola was able to diagnose the problem by running a few continuity tests on my circuit with the multimeter.
 
