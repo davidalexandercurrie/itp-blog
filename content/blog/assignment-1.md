@@ -1,8 +1,8 @@
 ---
 path: physical-computing-week-3
 date: 2020-09-25T12:08:15.405Z
-title: Physical Computing Week 3
-description: Audio Experiments with distance sensor & accelerometer
+title: Audio Experiments with distance sensor & accelerometer
+description: Physical Computing Week 3
 ---
 ## Proposal for assignment 1: A musical instrument combining accelerometer, gyroscope, and ultrasonic distance sensor.
 
