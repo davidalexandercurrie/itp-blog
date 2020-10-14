@@ -11,6 +11,18 @@ Part 1 of this week's assignment was to make revisions to our poster from last w
 
 <iframe style="border: none" src="https://davidalexandercurrie.github.io/itp-poster/" width="425" height="350"></iframe>
 
+# Logo
+
+## Inspiration
+
+My initials are d.a.c. which in audio programming stands for digital to analog converter. I thought it would be fun to try to use this for my logo. Here are some ways _dac_ comes up in some of the technology I use regularly.
+
+![maxdac](../assets/visual-language/week-5/maxdac.png "maxdac")
+
+![chuckdac](../assets/visual-language/week-5/chuckdac.png "chuckdac")
+
+![esp32dac](../assets/visual-language/week-5/esp32dac.png "esp32dac")
+
 ![2](../assets/visual-language/week-5/2.svg "attempt 2")
 
 ![3](../assets/visual-language/week-5/3.svg "attempt 3")
@@ -26,6 +38,8 @@ Part 1 of this week's assignment was to make revisions to our poster from last w
 ![10](../assets/visual-language/week-5/10.svg "attempt 10")
 
 ![11](../assets/visual-language/week-5/11.svg "attempt 11")
+
+## Final Logo & Style Guide
 
 ![Final Logo](../assets/visual-language/week-5/logo.png "Final Logo")
 
