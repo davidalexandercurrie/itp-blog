@@ -11,8 +11,6 @@ Part 1 of this week's assignment was to make revisions to our poster from last w
 
 <iframe style="border: none" src="https://davidalexandercurrie.github.io/itp-poster/" width="425" height="350"></iframe>
 
-![Colors](../assets/visual-language/week-5/colors.svg "Colors")
-
 ![2](../assets/visual-language/week-5/2.svg "attempt 2")
 
 ![3](../assets/visual-language/week-5/3.svg "attempt 3")
@@ -30,5 +28,7 @@ Part 1 of this week's assignment was to make revisions to our poster from last w
 ![11](../assets/visual-language/week-5/11.svg "attempt 11")
 
 ![Final Logo](../assets/visual-language/week-5/logo.png "Final Logo")
+
+![Colors](../assets/visual-language/week-5/colors.svg "Colors")
 
 <iframe src="https://giphy.com/embed/ePNBmenHCyFTFFjloa" width="480" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
