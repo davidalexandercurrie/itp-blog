@@ -5,3 +5,5 @@ title: Cornell Box
 description: Animation Week 5
 ---
 Animating in Unity
+
+`video: https://www.youtube.com/watch?v=JKVTSWfQ_YQ`
