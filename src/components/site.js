@@ -1,6 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
-import Button from "../components/button"
+// import { Link } from "gatsby"
+// import Button from "../components/button"
 import TV from "../components/tv"
 
 export default function site() {

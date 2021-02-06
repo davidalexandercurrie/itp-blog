@@ -1,11 +1,11 @@
 import React from "react"
-import image from "../../content/assets/haunt-that-house/haunt-that-house5.png"
+import image from "../../content/assets/haunt-that-house/haunt-that-house3.png"
 
 export default function tv() {
   return (
     <>
       <div className="tv">
-        <img src={image} />
+        <img alt="" className="image-in-tv" src={image} />
       </div>
       <div className="controls"></div>
     </>

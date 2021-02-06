@@ -19,25 +19,32 @@ body {
 }
 
 .bio {
-  font-family: "Fira Code"
+  font-family: "Fira Code";
 }
 
 main {
-  font-family: "Fira Code"
+  font-family: "Fira Code";
 }
 
 a {
   color: #297373;
-  &:hover{
+  &:hover {
     color: #ff8552 !important;
   }
 }
 
 .tv {
-  width: 800px;
-  height: 600px;
+  width: 1152px;
+  height: 648px;
   position: fixed;
   top: calc(50vh - 300px);
   left: calc(50vw - 400px);
   border: 20px solid black;
+  border-radius: 50px;
+  .image-in-tv {
+    border: 20px solid limegreen;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+  }
 }
