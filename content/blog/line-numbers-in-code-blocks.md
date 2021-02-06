@@ -6,7 +6,6 @@ description: Using gatsby-remark-vscode v3 to add line numbers to mdx code block
 ---
 
 ```js {numberLines}
-console.log("hi");
-
-console.log("hello");
+console.log("hi")
+console.log("hello")
 ```

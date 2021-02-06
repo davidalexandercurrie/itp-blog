@@ -15,12 +15,13 @@ const ButtonWrapper = styled.button`
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-family: "Fira Code";
 
   background: ${props => props.props.background || "black"};
-  color: ${props => props.props.color || "rgb(255, 255, 255)"};
+  color: ${props => props.props.color || "#e9d758"};
   font-size: ${props => props.props.fontSize || "15px"};
   font-weight: ${props => props.props.fontWeight || "600"};
-  border-radius: ${props => props.props.radius || "6px"};
+  border-radius: ${props => props.props.radius || "0px"};
   margin-top: ${props => props.props.marginTop};
   margin-bottom: ${props => props.props.marginBottom};
 

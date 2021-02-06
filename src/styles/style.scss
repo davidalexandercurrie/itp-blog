@@ -1,0 +1,43 @@
+@import "~@fontsource/fira-code/index.css";
+
+body {
+  h1 {
+    font-family: "Fira Code";
+  }
+  border: 2px solid red;
+}
+
+.blog-card {
+  font-family: "Fira Code";
+  h3 {
+    font-family: "Fira Code";
+  }
+  .blog-title {
+    color: #e9d758;
+    background-color: black;
+  }
+}
+
+.bio {
+  font-family: "Fira Code"
+}
+
+main {
+  font-family: "Fira Code"
+}
+
+a {
+  color: #297373;
+  &:hover{
+    color: #ff8552 !important;
+  }
+}
+
+.tv {
+  width: 800px;
+  height: 600px;
+  position: fixed;
+  top: calc(50vh - 300px);
+  left: calc(50vw - 400px);
+  border: 20px solid black;
+}

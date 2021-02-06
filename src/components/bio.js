@@ -7,10 +7,7 @@
 
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
 import styled from "styled-components"
-
-import { rhythm } from "../utils/typography"
 
 function Bio() {
   return (
@@ -33,8 +30,9 @@ function Bio() {
                 borderRadius: `50%`,
               }}
             /> */}
-            <p>
-              Written by <strong>{author}</strong>, a current student at NYU ITP.
+            <p className="bio">
+              Written by <strong>{author}</strong>, a current student at NYU
+              ITP.
               {` `}
               <a href={`https://twitter.com/${social.twitter}`}>
                 Follow me on Twitter

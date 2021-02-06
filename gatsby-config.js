@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `ITP-BLOG`,
+    title: `David Alexander Currie`,
     author: `David Currie`,
     description: `A blog to show what I get up to at ITP.`,
     siteUrl: `https://david-currie-itp-blog.netlify.app`,
@@ -17,6 +17,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-remove-serviceworker`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
     {
       resolve: "gatsby-plugin-local-search",
       options: {
@@ -112,6 +113,10 @@ module.exports = {
           },
           {
             resolve: `gatsby-remark-vscode`,
+            options: {
+              theme: `Radical`, // From package.json: contributes.themes[0].label
+              extensions: ["radical-vscode"], // From package.json: name
+            },
           },
           {
             resolve: `gatsby-remark-copy-linked-files`,

@@ -8,12 +8,13 @@ import { rhythm } from "../utils/typography"
 
 const SearchBar = styled.div`
   display: flex;
-  border: 1px solid #dfe1e5;
-  border-radius: 10px;
+  border: 1px solid #ff8552;
+  border-radius: 0px;
   margin: 0 auto ${rhythm(1)};
   width: 100%;
   height: 3rem;
   background: #fdfdfd;
+  font-family: "Fira Code";
 
   svg {
     margin: auto 1rem;
@@ -27,8 +28,6 @@ const SearchBar = styled.div`
     display: flex;
     flex: 100%;
     height: 100%;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 16px;
     background-color: transparent;
     border: none;
@@ -51,13 +50,17 @@ const SearchedPosts = ({ results }) =>
       const slug = node.slug
 
       return (
-        <div key={slug}>
+        <div className="blog-card" key={slug}>
           <h3
             style={{
               marginBottom: rhythm(1 / 4),
             }}
           >
-            <Link style={{ boxShadow: `none` }} to={`/blog${slug}`}>
+            <Link
+              className="blog-title"
+              style={{ boxShadow: `none` }}
+              to={`/blog${slug}`}
+            >
               {title}
             </Link>
           </h3>
@@ -81,13 +84,17 @@ const AllPosts = ({ posts }) => (
     {posts.map(({ node }) => {
       const title = node.frontmatter.title || node.fields.slug
       return (
-        <div key={node.fields.slug}>
+        <div className="blog-card" key={node.fields.slug}>
           <h3
             style={{
               marginBottom: rhythm(1 / 4),
             }}
           >
-            <Link style={{ boxShadow: `none` }} to={`/blog${node.fields.slug}`}>
+            <Link
+              className="blog-title"
+              style={{ boxShadow: `none` }}
+              to={`/blog${node.fields.slug}`}
+            >
               {title}
             </Link>
           </h3>
