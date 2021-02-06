@@ -1,5 +1,5 @@
 import React from "react"
-import image from "../../content/assets/haunt-that-house/haunt-that-house3.png"
+import image from "../../content/assets/home/dave-live-code.jpeg"
 
 export default function tv() {
   return (

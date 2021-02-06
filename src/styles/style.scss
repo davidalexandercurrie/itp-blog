@@ -2,9 +2,13 @@
 
 body {
   h1 {
+    color: #ff8552;
+    font-size: 5em !important;
+    font-stretch: ultra-expanded;
     font-family: "Fira Code";
+    letter-spacing: 1em;
+    text-shadow: 1px -5px 5px #297373;
   }
-  border: 2px solid red;
 }
 
 .blog-card {
@@ -40,9 +44,11 @@ a {
   top: calc(50vh - 300px);
   left: calc(50vw - 400px);
   border: 20px solid black;
+  box-shadow: 100px 150px 200px;
   border-radius: 50px;
+  color: rgb(32, 34, 58);
   .image-in-tv {
-    border: 20px solid limegreen;
+    border: 20px solid #ff8552;
     height: 100%;
     width: 100%;
     border-radius: 25px;
