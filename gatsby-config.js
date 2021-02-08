@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `David Alexander Currie`,
+    title: `david alexander currie`,
     author: `David Currie`,
-    description: `A blog to show what I get up to at ITP.`,
-    siteUrl: `https://david-currie-itp-blog.netlify.app`,
+    description: `Things I'm doing at ITP.`,
+    siteUrl: `https://davidalexandercurrie.com`,
     social: {
       twitter: `dvdlxndr`,
       instagram: `davidalexandercurrie`,

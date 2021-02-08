@@ -1,56 +1,129 @@
 @import "~@fontsource/fira-code/index.css";
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Tinos:ital@1&display=swap");
+$main-font: "Fira Code";
+// $main-font: "Times New Roman";
+// $main-font: "Cinzel", serif;
+// $main-font: "Tinos", serif;
+
+html {
+  width: 100vw;
+  height: 100vh;
+}
 
 body {
-  h1 {
-    color: #ff8552;
-    font-size: 5em !important;
+  background-color: lighten(#ff3fff, 30%);
+  .main-title {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    color: white;
+    text-align: center;
+    font-size: 3.3vw !important;
     font-stretch: ultra-expanded;
-    font-family: "Fira Code";
-    letter-spacing: 1em;
-    text-shadow: 1px -5px 5px #297373;
+    font-family: $main-font;
+    letter-spacing: 2.4vw;
+    text-shadow: 3px 3px 1px#2fffff;
+    padding: 0.1em;
+    margin-bottom: 0 !important;
+    // border: 2px solid grey;
+    background: black;
+    font-weight: 100;
+    @media only screen and (max-width: 600px) {
+      font-size: 10vw !important;
+    }
+  }
+  .secondary-title {
+    background: white;
+    font-size: 3em;
   }
 }
 
 .blog-card {
-  font-family: "Fira Code";
+  font-family: $main-font;
   h3 {
-    font-family: "Fira Code";
+    font-family: $main-font;
   }
   .blog-title {
-    color: #e9d758;
+    color: #2fffff;
     background-color: black;
+    &:hover {
+      color: #ff3fff !important;
+    }
   }
 }
 
 .bio {
-  font-family: "Fira Code";
+  font-family: $main-font;
 }
 
 main {
-  font-family: "Fira Code";
+  font-family: $main-font;
 }
 
 a {
-  color: #297373;
+  color: white;
   &:hover {
-    color: #ff8552 !important;
+    color: #2fffff !important;
   }
 }
 
 .tv {
-  width: 1152px;
-  height: 648px;
-  position: fixed;
-  top: calc(50vh - 300px);
-  left: calc(50vw - 400px);
-  border: 20px solid black;
-  box-shadow: 100px 150px 200px;
-  border-radius: 50px;
+  transform: rotate3d(3, 4, 1, 35deg);
+  width: calc(100vw - 42px);
+  max-width: 960px;
+  height: 50vh;
+  max-height: 540px;
+  box-shadow: 100px 50px 200px #ff3fff;
   color: rgb(32, 34, 58);
-  .image-in-tv {
-    border: 20px solid #ff8552;
+  background-color: black;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 100%;
+  @media only screen and (max-width: 600px) {
+    top: 25%;
+  }
+  #image-in-tv {
+    border: 0.5vw solid black !important;
     height: 100%;
     width: 100%;
-    border-radius: 25px;
+    box-shadow: -50px 0px 100px;
+    border-style: ridge;
+    border-radius: 100%;
   }
+}
+
+.main-button-container {
+  z-index: 10;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  border: 1px solid darkgray;
+  // background: #2fffff;
+  background: lightgrey;
+  display: flex;
+  // max-width: calc(100vw - 42px);
+  flex-wrap: wrap;
+  margin-bottom: 4em;
+  button {
+    border: 4px solid lightgrey;
+    border-style: ridge;
+    padding: 0.1em 0.3em;
+    font-size: 1.1em;
+  }
+}
+
+.lower-bar {
+  width: 100vw;
+  height: 4em;
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
 }

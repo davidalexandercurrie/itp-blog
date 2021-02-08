@@ -34,7 +34,13 @@ function Bio() {
               Written by <strong>{author}</strong>, a current student at NYU
               ITP.
               {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
+              <a
+                style={{
+                  color: "black",
+                  background: "white",
+                }}
+                href={`https://twitter.com/${social.twitter}`}
+              >
                 Follow me on Twitter
               </a>
             </p>

@@ -7,7 +7,7 @@ import Site from "../components/site"
 
 class IndexPage extends React.Component {
   render() {
-    const siteTitle = "David Currie"
+    const siteTitle = "david alexander currie"
 
     return (
       <Layout location={this.props.location} title={siteTitle}>

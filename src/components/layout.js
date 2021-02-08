@@ -11,9 +11,10 @@ class Layout extends React.Component {
     const blogPath = `${__PATH_PREFIX__}/blog/`
     let header
 
-    if (location.pathname === rootPath || location.pathname === blogPath) {
+    if (location.pathname === rootPath) {
       header = (
         <h1
+          className="main-title"
           style={{
             ...scale(1.5),
             marginBottom: rhythm(1.5),
@@ -35,6 +36,7 @@ class Layout extends React.Component {
     } else {
       header = (
         <h3
+          className="secondary-title"
           style={{
             fontFamily: `Fira Code`,
             marginTop: 0,

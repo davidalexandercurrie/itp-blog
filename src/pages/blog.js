@@ -26,7 +26,9 @@ class Blog extends React.Component {
           location={location}
         />
         <Link to="/">
-          <Button marginTop="85px">Go Home</Button>
+          <Button color="#2fffff" fontSize="1.5em" marginTop="85px">
+            Go Home
+          </Button>
         </Link>
       </Layout>
     )
