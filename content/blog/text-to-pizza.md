@@ -15,3 +15,5 @@ Text to Pizza is a communication tool that used voice recognition to listen to t
 - [emojify](https://www.npmjs.com/package/@twuni/emojify)
 - [https://www.npmjs.com/package/wordpos](https://www.npmjs.com/package/wordpos)
 - [socket.io](https://socket.io/)
+
+`video: https://www.youtube.com/watch?v=5Cno87Q9llY&feature=youtu.be`
