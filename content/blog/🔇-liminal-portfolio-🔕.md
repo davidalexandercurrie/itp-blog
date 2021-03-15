@@ -7,7 +7,7 @@ description: 😇 Blessed / 🤠 Blursed 🐬 / Cursed 😈
 
 # Project Description 
 
-My idea for this project is to create an online browser-based gallery of sorts the produces the feeling & atmosphere of a liminal space. The space will be used to house my weird, forgotten, unfinished projects. I want the web site to feel abandoned as though you are encountering a space with the lights *turned off*. To achieve this I plan to encorporate a playful take on lighting, sound & space.
+My idea for this project is to create an online browser-based gallery that evokes the aesthetics, feelings, and atmospheres of a liminal space. The space will be used to house my weird, forgotten, and unfinished projects. I want the web site to feel abandoned as though one is encountering a space with the lights *turned off*. To achieve this effect, I plan to incorporate playful takes on lighting, sound and space.
 
 # Inspiration 
 
@@ -18,7 +18,7 @@ My idea for this project is to create an online browser-based gallery of sorts t
 <iframe width="1440" height="900" src="https://www.abandonwaredos.com/">/</iframe>
 
 
-Lost, forgotten, machinery.
+Lost, Forgotten, Machinery...
 
 ![abandoned carousel](https://i.insider.com/5a944397c1699541008b46fb?width=2000&format=jpeg&auto=webp)
 
@@ -26,15 +26,15 @@ Lost, forgotten, machinery.
 
 ![liminal library](https://pbs.twimg.com/media/C3Qcf_9XAAAahA4.jpg)
 
-I want to also play with the sound of an abandoned/liminal website. When I watched this documentary I found the coupling of the sounds with the places very haunting.
+I am particularly interested in the sounds of an abandoned/ liminal website. When I watched this documentary I found the coupling of the sounds with the places very haunting.
 <iframe width="1440" height="900" src="https://www.youtube.com/embed/rEgjEzB36Lo"></iframe>
 
-This online audio installation I made in 2020 now feels abandoned and *liminal* to me. I think this is because of the movement & sounds. It seems like ancient machinery that has just been left running.
+This online audio installation I made in 2020 now feels abandoned and *liminal* to me, perhaps due to the movement and sounds, like ancient machinery that has been left running...
 <iframe width="1440" height="900" src="https://multimono.space/"></iframe>
 
-# Plan of action
+# Plan of Action
 
-My plan is to port the rough idea of the prototype to three.js and encoroporate positional audio & reverb to add to the feeling of space. I want to include a section that has snippets of code from my live-coding practice and their associated audio that feel *forgotten* to me. I want to spatialise the different works/images/soundclips both in 3d virtual space as well as 3d audio space. Many of the works that will be *on display* don't work properly anymore or were just never finished which makes them independently feel liminal.
+My plan is to port the prototype to three.js and add positional audio and reverb to simulate physical space. I want to include a section that has snippets of code from my live-coding practice as well as related audio that feel *forgotten* to me. I want to spatialise the different works, images, and soundclips both in 3D virtual space and 3D audio space. Many of the works that will be *on display* don't work anymore or were never finished, which personally makes them feel liminal.
 
 # Prototype
 [Original](https://davidalexandercurrie.github.io/liminal-portfolio/)
