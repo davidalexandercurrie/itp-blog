@@ -36,6 +36,10 @@ body {
   .secondary-title {
     background: white;
     font-size: 3em;
+    &:hover {
+      background: black;
+      color: #2fffff !important;
+    }
   }
 }
 
@@ -48,7 +52,7 @@ body {
     color: #2fffff;
     background-color: black;
     &:hover {
-      color: #ff3fff !important;
+      color: white !important;
     }
   }
 }
@@ -63,10 +67,15 @@ main {
 
 a {
   color: white;
+  background: black;
   &:hover {
     color: #2fffff !important;
   }
 }
+h3 a {
+  background: none;
+}
+
 
 .tv {
   transform: rotate3d(3, 4, 1, 35deg);
@@ -128,3 +137,4 @@ a {
   left: 0;
   z-index: 10;
 }
+
