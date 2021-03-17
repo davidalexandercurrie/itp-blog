@@ -11,9 +11,9 @@ My idea for this project is to create an online browser-based gallery that evoke
 
 # Inspiration 
 
-<iframe width="1440" height="900" src="https://home.mcom.com/home/welcome.html">/</iframe>
+<iframe width="1440" height="900" src="http://home.mcom.com/home/welcome.html">/</iframe>
 
-<iframe width="1440" height="900" src="https://www.atarihq.com/tsr/">/</iframe>
+<iframe width="1440" height="900" src="http://www.atarihq.com/tsr/">/</iframe>
 
 <iframe width="1440" height="900" src="https://www.abandonwaredos.com/">/</iframe>
 

@@ -34,12 +34,24 @@ body {
     }
   }
   .secondary-title {
-    background: white;
+    background: black;
+    color: #2fffff;
     font-size: 3em;
+    text-align: center;
     &:hover {
-      background: black;
-      color: #2fffff !important;
+      a {
+          color: white !important;
+      }
     }
+  }
+  h3 {
+    font-family: $main-font;
+  }
+  h2 {
+    font-family: $main-font;
+  }
+  h1 {
+    font-family: $main-font;
   }
 }
 
