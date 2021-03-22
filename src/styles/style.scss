@@ -5,9 +5,13 @@ $main-font: "Fira Code";
 // $main-font: "Cinzel", serif;
 // $main-font: "Tinos", serif;
 
-html {
+html, body, canvas {
   width: 100vw;
   height: 100vh;
+}
+
+canvas {
+  // background-color: white;
 }
 
 body {
@@ -150,3 +154,34 @@ h3 a {
   z-index: 10;
 }
 
+iframe {
+   position: relative;
+  background-color: white;
+  border: 10px solid lightpink;
+  border-radius: 50%;
+  box-shadow: 100px 80px 100px -100px darkslateblue,
+    120px 55px 100px -100px darkblue, 140px 30px 100px -100px darkmagenta,
+    inset 100px 100px 240px whitesmoke, inset 20px 0 80px #f0f;
+  // inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff,
+  // 0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff, 1000px 1000px 80px #0ff;
+  display: inline-block;
+  padding: 0;
+  margin: 25vh;
+  top: 0;
+  object-fit: cover;
+  text-align: center;
+  font-size: 2em;
+  &:hover {
+    z-index: 555555 !important;
+  }
+}
+
+#exit {
+  border: 2px solid magenta;
+  padding: 0.25em 0.5em;
+  font-family: $main-font;
+  &:hover {
+    background: white;
+    cursor: pointer;
+  }
+}

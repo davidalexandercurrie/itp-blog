@@ -11,6 +11,7 @@
     "@fontsource/fira-code": "^4.1.0",
     "@mdx-js/mdx": "^1.5.1",
     "@mdx-js/react": "^1.5.1",
+    "@react-three/drei": "^3.11.2",
     "babel-plugin-styled-components": "^1.10.0",
     "gatsby": "^2.24.47",
     "gatsby-image": "^2.0.39",
@@ -43,10 +44,12 @@
     "react-responsive": "^8.2.0",
     "react-spring": "^8.0.27",
     "react-switch": "^5.0.0",
+    "react-three-fiber": "^5.3.19",
     "react-typography": "^0.16.19",
     "react-use-flexsearch": "^0.1.1",
     "sass": "^1.32.2",
     "styled-components": "^4.2.0",
+    "three": "^0.126.1",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.54",
     "typography": "^0.16.19",
@@ -54,8 +57,7 @@
   },
   "devDependencies": {
     "gatsby-cli": "^2.12.66",
-    "gatsby-plugin-root-import": "^2.0.5",
-    "prettier": "^1.17.0"
+    "gatsby-plugin-root-import": "^2.0.5"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [

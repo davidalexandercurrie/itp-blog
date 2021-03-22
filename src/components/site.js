@@ -36,6 +36,14 @@ export default function site() {
             𝌕Contact
           </Button>
         </Link>
+        <Link to="/liminal/">
+          <Button
+            style={{ marginTop: 0, marginBottom: 0 }}
+            background="lightgrey"
+          >
+            🗑Liminal
+          </Button>
+        </Link>
       </div>
       <div className="lower-bar"></div>
       <TV />
