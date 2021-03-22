@@ -1,17 +1,24 @@
-import React, { useRef } from "react"
-import { Canvas, useFrame } from "react-three-fiber"
-import { Html } from "@react-three/drei"
+import React, { useRef, useState, useEffect, Suspense } from "react"
+import { Canvas, useFrame, useThree,  useLoader } from "react-three-fiber"
+import * as THREE from "three";
+import { Html, PositionalAudio } from "@react-three/drei"
 import { Link } from "gatsby"
 
 const sites = [
   "https://degenerative-supernova.glitch.me/",
+  "https://www.youtube.com/embed/nZDkspwtAzE?mute=1&autoplay=1&loop=1&playlist=nZDkspwtAzE",
   "https://socket-av.herokuapp.com",
   "https://multimono.space",
-  "https://up-cycle.glitch.me",
-  "https://text-to-pizza.herokuapp.com",
-  "https://www.youtube.com/embed/y-eJfYD1coo",
-  "https://www.youtube.com/embed/Jx5slkcBc8I",
   "https://sentiment-synthesis.herokuapp.com/",
+  "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/171273618&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+  "https://www.youtube.com/embed/y-eJfYD1coo?mute=1&autoplay=1&loop=1&playlist=y-eJfYD1coo",
+  "https://www.youtube.com/embed/JKVTSWfQ_YQ?mute=1&autoplay=1&loop=1&playlist=JKVTSWfQ_YQ",
+  "https://up-cycle.glitch.me",
+  "https://littlespaceship.herokuapp.com/",
+  "https://davidalexandercurrie.github.io/webmidifun/",
+  "https://text-to-pizza.herokuapp.com",
+  "https://www.youtube.com/embed/Jx5slkcBc8I?mute=1&autoplay=1&loop=1&playlist=Jx5slkcBc8I",
+  "https://davidalexandercurrie.github.io/ComPoser/",
   "https://spooky-ghost-game.herokuapp.com/",
 ]
 
@@ -19,7 +26,7 @@ function Dolly() {
   // This one makes the camera move in and out
   useFrame(({ clock, camera }) => {
     camera.position.z = 50
-    camera.position.x = -100 + clock.getElapsedTime() * 50
+    camera.position.x = -100 + clock.getElapsedTime() * 5
   })
   return null
 }
@@ -40,7 +47,7 @@ function Cube({ ...props }) {
     <>
       <mesh ref={ref} position={props.pos}>
         <Html center>
-          <iframe ref={iframe} src={props.url}></iframe>
+          <iframe className="liminal-iframe" ref={iframe} src={props.url}></iframe>
         </Html>
       </mesh>
     </>
@@ -55,15 +62,29 @@ function LinkHome({ ...props }) {
   })
   return (
     <>
+    <Suspense fallback={null}>
       <mesh ref={ref} position={props.pos}>
         <Html center>
           <Link to="/">
             <p id="exit">⬅ exit to website</p>
           </Link>
         </Html>
+        {/* <PlaySound url="d18.ogg" /> */}
       </mesh>
+      </Suspense>
     </>
   )
+}
+
+function PlaySound({ url }) {
+  // This component creates a suspense block, blocking execution until
+  // all async tasks (in this case PositionAudio) have been resolved.
+  const sound = useRef();
+  return (
+    
+      <PositionalAudio url={url} ref={sound} />
+    
+  );
 }
 
 function Light({ brightness, color }) {
@@ -96,6 +117,7 @@ export default function liminal() {
   return (
     <>
       <Canvas>
+      <Suspense fallback={() => <div>hi</div>}>
       <BackDrop />
         <Light brightness={10} color={"white"} />
         <fog attach="fog" args={['blue', 50, 0]} />
@@ -109,6 +131,7 @@ export default function liminal() {
         </mesh>
         <LinkHome pos={[0, 50, 0]} />
         <Dolly />
+        </Suspense>
       </Canvas>
     </>
   )
