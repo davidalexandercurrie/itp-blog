@@ -6,8 +6,9 @@ import { Link } from "gatsby"
 
 const sites = [
   "https://degenerative-supernova.glitch.me/",
+  "https://text-to-pizza.herokuapp.com",
+  "https://www.youtube.com/embed/Jx5slkcBc8I?mute=1&autoplay=1&loop=1&playlist=Jx5slkcBc8I",
   "https://www.youtube.com/embed/nZDkspwtAzE?mute=1&autoplay=1&loop=1&playlist=nZDkspwtAzE",
-  "https://socket-av.herokuapp.com",
   "https://multimono.space",
   "https://sentiment-synthesis.herokuapp.com/",
   "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/171273618&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
@@ -16,8 +17,7 @@ const sites = [
   "https://up-cycle.glitch.me",
   "https://littlespaceship.herokuapp.com/",
   "https://davidalexandercurrie.github.io/webmidifun/",
-  "https://text-to-pizza.herokuapp.com",
-  "https://www.youtube.com/embed/Jx5slkcBc8I?mute=1&autoplay=1&loop=1&playlist=Jx5slkcBc8I",
+  "https://socket-av.herokuapp.com",
   "https://davidalexandercurrie.github.io/ComPoser/",
   "https://spooky-ghost-game.herokuapp.com/",
 ]
@@ -26,7 +26,7 @@ function Dolly() {
   // This one makes the camera move in and out
   useFrame(({ clock, camera }) => {
     camera.position.z = 50
-    camera.position.x = -100 + clock.getElapsedTime() * 5
+    camera.position.x = -100 + clock.getElapsedTime() * 3
   })
   return null
 }
@@ -42,6 +42,7 @@ function Cube({ ...props }) {
     iframe.current.height = `${
       400 - (camera.position.z - ref.current.position.z * 400)
     }px`
+    ref.current.position.y = 12 - ref.current.position.z * 30
   })
   return (
     <>
@@ -96,7 +97,7 @@ function Light({ brightness, color }) {
       height={3}
       color={color}
       intensity={brightness}
-      position={[-2, 0, 5]}
+      position={[-2, 0, -5]}
       lookAt={[0, 0, 0]}
       penumbra={1}
       castShadow
@@ -113,22 +114,35 @@ function BackDrop() {
   );
 }
 
+function Lines({...props}){
+  return (
+    <mesh receiveShadow position={[0, props.y, 20]} rotation={[1, Math.random() * 0.1 - 0.05, 0]}>
+          <planeGeometry attach="geometry" args={[2000, 1, 1]} />
+          <meshBasicMaterial color={"blue"} attach="material" />
+        </mesh>
+  )
+}
+
 export default function liminal() {
   return (
     <>
       <Canvas>
       <Suspense fallback={() => <div>hi</div>}>
       <BackDrop />
-        <Light brightness={10} color={"white"} />
+        <Light brightness={5} color={"white"} />
         <fog attach="fog" args={['blue', 50, 0]} />
         {sites.map((site, index) => (
-          <Cube url={site} pos={[-100 + 50 * index, 0, 0]} />
+          <Cube url={site} pos={[-100 + 50 * index, 0, (Math.random() * 1) - 0.3]} />
         ))}
-
-        <mesh receiveShadow position={[0, -20, -5]} rotation={[1, 0, 0]}>
-          <planeGeometry attach="geometry" args={[1000, 20, 1]} />
-          <meshBasicMaterial color={"magenta"} attach="material" />
-        </mesh>
+        {sites.map((site, index) => 
+           <Lines y={(index * 1) - 20} />  
+        )}
+        {sites.map((site, index) => 
+           <Lines y={(index * 1) - 20} />  
+        )}
+        {sites.map((site, index) => 
+           <Lines y={(index * 1) - 20} />  
+        )}
         <LinkHome pos={[0, 50, 0]} />
         <Dolly />
         </Suspense>

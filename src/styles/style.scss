@@ -161,9 +161,9 @@ h3 a {
   border-radius: 50%;
   box-shadow: 100px 80px 100px -100px darkslateblue,
     120px 55px 100px -100px darkblue, 140px 30px 100px -100px darkmagenta,
-    inset 100px 100px 240px whitesmoke, inset 20px 0 80px #f0f;
-  // inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff,
-  // 0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff, 1000px 1000px 80px #0ff;
+    inset 100px 100px 240px whitesmoke, inset 20px 0 80px #f0f,
+  inset -20px 0 80px #0ff, inset 200px 0 30px #f0f, inset -20px 0 30px #0ff,
+  0 0 5px #fff, -10px 0 80px #f0f, 10px 0 8px #0ff, 1000px 1000px 8px #0ff;
   display: inline-block;
   padding: 0;
   margin: 25vh;
@@ -180,6 +180,7 @@ h3 a {
   border: 2px solid magenta;
   padding: 0.25em 0.5em;
   font-family: $main-font;
+    background: black;
   &:hover {
     background: white;
     cursor: pointer;
