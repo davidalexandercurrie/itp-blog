@@ -9,13 +9,13 @@ Here is my video of the gesture to emoji exercise for week 4. The model works re
 
 Some problems I ran into:
 
-`error: 'AllOpsResolver' in namespace 'tflite::ops::micro' does not name a type tflite::ops::micro::AllOpsResolver tflOpsResolver;`
+1. `error: 'AllOpsResolver' in namespace 'tflite::ops::micro' does not name a type tflite::ops::micro::AllOpsResolver tflOpsResolver;`
 
 This line needed to be changed to tflite::AllOpsResolver tflOpsResolver;
 
 https://github.com/arduino/ArduinoTensorFlowLiteTutorials/issues/16
 
-`tensorflow/lite/experimental/micro/kernels/all_ops_resolver.h: No such file or directory`
+2. `tensorflow/lite/experimental/micro/kernels/all_ops_resolver.h: No such file or directory`
 
 The library imports needed to be changed to:
 
