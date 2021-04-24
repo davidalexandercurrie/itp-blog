@@ -208,3 +208,24 @@ h3 a {
     }
   }
 }
+
+.contact {
+  border: 2px solid magenta;
+  padding: 0.25em 0.5em;
+  font-family: $main-font;
+  background: black;
+  p {
+    margin: 0;
+  }
+  p:last-of-type {
+    margin-bottom: 1em;
+  }
+
+  .contact-home {
+    &:hover {
+      border: 2px solid magenta;
+      background: white;
+      cursor: pointer;
+    }
+  }
+}

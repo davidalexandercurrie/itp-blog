@@ -20,7 +20,7 @@ export default function projects() {
         </Link>
         <Link to="/">
           <Button color="#2fffff" fontSize="1.5em" marginTop="85px">
-            Go Home
+            Home
           </Button>
         </Link>
       </div>
