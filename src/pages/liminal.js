@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect, Suspense } from "react"
-import { Canvas, useFrame, useThree,  useLoader } from "react-three-fiber"
-import * as THREE from "three";
+import { Canvas, useFrame, useThree, useLoader } from "react-three-fiber"
+import * as THREE from "three"
 import { Html, PositionalAudio } from "@react-three/drei"
 import { Link } from "gatsby"
 
@@ -48,7 +48,11 @@ function Cube({ ...props }) {
     <>
       <mesh ref={ref} position={props.pos}>
         <Html center>
-          <iframe className="liminal-iframe" ref={iframe} src={props.url}></iframe>
+          <iframe
+            className="liminal-iframe"
+            ref={iframe}
+            src={props.url}
+          ></iframe>
         </Html>
       </mesh>
     </>
@@ -63,15 +67,15 @@ function LinkHome({ ...props }) {
   })
   return (
     <>
-    <Suspense fallback={null}>
-      <mesh ref={ref} position={props.pos}>
-        <Html center>
-          <Link to="/">
-            <p id="exit">⬅ exit to website</p>
-          </Link>
-        </Html>
-        {/* <PlaySound url="d18.ogg" /> */}
-      </mesh>
+      <Suspense fallback={null}>
+        <mesh ref={ref} position={props.pos}>
+          <Html center>
+            <Link to="/">
+              <p id="exit">⬅ exit to website</p>
+            </Link>
+          </Html>
+          {/* <PlaySound url="d18.ogg" /> */}
+        </mesh>
       </Suspense>
     </>
   )
@@ -80,28 +84,24 @@ function LinkHome({ ...props }) {
 function PlaySound({ url }) {
   // This component creates a suspense block, blocking execution until
   // all async tasks (in this case PositionAudio) have been resolved.
-  const sound = useRef();
-  return (
-    
-      <PositionalAudio url={url} ref={sound} />
-    
-  );
+  const sound = useRef()
+  return <PositionalAudio url={url} ref={sound} />
 }
 
 function Light({ brightness, color }) {
   return (
-  <>
-     
-    <rectAreaLight
-      width={3}
-      height={3}
-      color={color}
-      intensity={brightness}
-      position={[-2, 0, -5]}
-      lookAt={[0, 0, 0]}
-      penumbra={1}
-      castShadow
-    /></>
+    <>
+      <rectAreaLight
+        width={3}
+        height={3}
+        color={color}
+        intensity={brightness}
+        position={[-2, 0, -5]}
+        lookAt={[0, 0, 0]}
+        penumbra={1}
+        castShadow
+      />
+    </>
   )
 }
 
@@ -111,15 +111,19 @@ function BackDrop() {
       <planeBufferGeometry attach="geometry" args={[5000, 2000]} />
       <meshStandardMaterial attach="material" color="white" />
     </mesh>
-  );
+  )
 }
 
-function Lines({...props}){
+function Lines({ ...props }) {
   return (
-    <mesh receiveShadow position={[0, props.y, 20]} rotation={[1, Math.random() * 0.1 - 0.05, 0]}>
-          <planeGeometry attach="geometry" args={[2000, 1, 1]} />
-          <meshBasicMaterial color={"blue"} attach="material" />
-        </mesh>
+    <mesh
+      receiveShadow
+      position={[0, props.y, 20]}
+      rotation={[1, Math.random() * 0.1 - 0.05, 0]}
+    >
+      <planeGeometry attach="geometry" args={[2000, 1, 1]} />
+      <meshBasicMaterial color={"blue"} attach="material" />
+    </mesh>
   )
 }
 
@@ -127,24 +131,27 @@ export default function liminal() {
   return (
     <>
       <Canvas>
-      <Suspense fallback={() => <div>hi</div>}>
-      <BackDrop />
-        <Light brightness={5} color={"white"} />
-        <fog attach="fog" args={['blue', 50, 0]} />
-        {sites.map((site, index) => (
-          <Cube url={site} pos={[-100 + 50 * index, 0, (Math.random() * 1) - 0.3]} />
-        ))}
-        {sites.map((site, index) => 
-           <Lines y={(index * 1) - 20} />  
-        )}
-        {sites.map((site, index) => 
-           <Lines y={(index * 1) - 20} />  
-        )}
-        {sites.map((site, index) => 
-           <Lines y={(index * 1) - 20} />  
-        )}
-        <LinkHome pos={[0, 50, 0]} />
-        <Dolly />
+        <Suspense fallback={() => <div>hi</div>}>
+          <BackDrop />
+          <Light brightness={5} color={"white"} />
+          <fog attach="fog" args={["blue", 50, 0]} />
+          {sites.map((site, index) => (
+            <Cube
+              url={site}
+              pos={[-100 + 50 * index, 0, Math.random() * 1 - 0.3]}
+            />
+          ))}
+          {sites.map((site, index) => (
+            <Lines y={index * 1 - 20} />
+          ))}
+          {sites.map((site, index) => (
+            <Lines y={index * 1 - 20} />
+          ))}
+          {sites.map((site, index) => (
+            <Lines y={index * 1 - 20} />
+          ))}
+          <LinkHome pos={[0, 50, 0]} />
+          <Dolly />
         </Suspense>
       </Canvas>
     </>

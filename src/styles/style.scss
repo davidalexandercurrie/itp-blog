@@ -5,7 +5,9 @@ $main-font: "Fira Code";
 // $main-font: "Cinzel", serif;
 // $main-font: "Tinos", serif;
 
-html, body, canvas {
+html,
+body,
+canvas {
   width: 100vw;
   height: 100vh;
 }
@@ -44,7 +46,7 @@ body {
     text-align: center;
     &:hover {
       a {
-          color: white !important;
+        color: white !important;
       }
     }
   }
@@ -91,7 +93,6 @@ a {
 h3 a {
   background: none;
 }
-
 
 .tv {
   transform: rotate3d(3, 4, 1, 35deg);
@@ -155,15 +156,15 @@ h3 a {
 }
 
 .liminal-iframe {
-   position: relative;
+  position: relative;
   background-color: white;
   border: 10px solid lightpink;
   border-radius: 50%;
   box-shadow: 100px 80px 100px -100px darkslateblue,
     120px 55px 100px -100px darkblue, 140px 30px 100px -100px darkmagenta,
     inset 100px 100px 240px whitesmoke, inset 20px 0 80px #f0f,
-  inset -20px 0 80px #0ff, inset 200px 0 30px #f0f, inset -20px 0 30px #0ff,
-  0 0 5px #fff, -10px 0 80px #f0f, 10px 0 8px #0ff, 1000px 1000px 8px #0ff;
+    inset -20px 0 80px #0ff, inset 200px 0 30px #f0f, inset -20px 0 30px #0ff,
+    0 0 5px #fff, -10px 0 80px #f0f, 10px 0 8px #0ff, 1000px 1000px 8px #0ff;
   display: inline-block;
   padding: 0;
   margin: 25vh;
@@ -180,9 +181,25 @@ h3 a {
   border: 2px solid magenta;
   padding: 0.25em 0.5em;
   font-family: $main-font;
-    background: black;
+  background: black;
   &:hover {
     background: white;
     cursor: pointer;
+  }
+}
+
+.projects {
+  .project-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  background: white;
+  h1 {
+    background: black;
+    color: white;
+    margin: 0;
+  }
+  .card {
+    border-bottom: 2px solid black;
   }
 }

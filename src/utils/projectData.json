@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "title": "Tele-techno-bot",
+      "description": "A musical telerobotic",
+      "github": "",
+      "videoUrl": "https://www.youtube.com/embed/Lasu3JsAD-I"
+    },
+    {
+      "title": "MultiMono",
+      "description": "A browser-based spatial sound installation",
+      "github": "",
+      "videoUrl": "https://multimono.space"
+    },
+    {
+      "title": "Elon Oblivion",
+      "description": "A valentines day inspired command line piece merging music by Grimes with tweets from Elon Musk.",
+      "github": "",
+      "videoUrl": "https://www.youtube.com/embed/Jx5slkcBc8I"
+    },
+    {
+      "title": "Text-to-pizza",
+      "description": "A communication tool that intercepts conversations and creates emoji-based advertisement pop-ups that relate to what you talked about.",
+      "github": "",
+      "videoUrl": "https://www.youtube.com/embed/5Cno87Q9llY"
+    }
+  ]
+}
