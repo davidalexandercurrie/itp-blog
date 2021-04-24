@@ -189,6 +189,8 @@ h3 a {
 }
 
 .projects {
+  font-family: $main-font;
+  text-align: center;
   .project-cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -201,5 +203,8 @@ h3 a {
   }
   .card {
     border-bottom: 2px solid black;
+    .card-inner {
+      margin: 2em;
+    }
   }
 }
