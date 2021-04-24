@@ -15,6 +15,9 @@ export default function projects() {
             return <Card project={project} />
           })}
         </div>
+        <Link to="/liminal">
+          <a>Check out other experiments</a>
+        </Link>
         <Link to="/">
           <Button color="#2fffff" fontSize="1.5em" marginTop="85px">
             Go Home

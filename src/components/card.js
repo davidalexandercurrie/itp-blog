@@ -14,6 +14,9 @@ export default function card({ project }) {
           allowfullscreen
         ></iframe>
         <p>{project.description}</p>
+        <a href={project.github} target="_blank" rel="noopener">
+          GitHub
+        </a>
       </div>
     </div>
   )
