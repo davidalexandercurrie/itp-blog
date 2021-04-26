@@ -5,18 +5,26 @@ export default function card({ project }) {
     <div className="card">
       <div className="card-inner">
         <h3>{project.title}</h3>
-        <iframe
-          width="560"
-          height="315"
-          src={project.videoUrl}
-          title="YouTube video player"
-          frameborder="0"
-          allowfullscreen
-        ></iframe>
+        <div className="iframe-container">
+          <iframe
+            className="responsive-iframe"
+            src={project.videoUrl}
+            title="YouTube video player"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
         <p>{project.description}</p>
-        <a href={project.github} target="_blank" rel="noopener">
-          GitHub
-        </a>
+        {Object.keys(project.links).map((link) => {
+          return (
+            <>
+              <a href={project.links[link]} target="_blank" rel="noopener">
+                {link}
+              </a>
+              <br />
+            </>
+          )
+        })}
       </div>
     </div>
   )

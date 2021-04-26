@@ -7,11 +7,6 @@ export default function site() {
   return (
     <>
       <div className="main-button-container">
-        {/* <Link to="/projects/">
-          <Button marginTop="35px" background="grey">
-            Projects
-          </Button>
-        </Link> */}
         <Link to="/blog/">
           <Button
             style={{ marginTop: 0, marginBottom: 0 }}
