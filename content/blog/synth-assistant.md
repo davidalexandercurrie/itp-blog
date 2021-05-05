@@ -5,3 +5,5 @@ title: Synth Assistant
 description: OK Robot Reboot Final
 ---
 `video: https://youtu.be/6o0p4uoA4uw`
+
+![haunt-that-house](../assets/okrobot/diagram-final.png)
