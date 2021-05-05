@@ -5,9 +5,10 @@ title: Synth Assistant
 description: OK Robot Reboot Final
 ---
 
+`video: https://www.youtube.com/watch?v=Gs1Lw5yfhUU`
 `video: https://youtu.be/6o0p4uoA4uw`
 
+![haunt-that-house](../assets/okrobot/synth-bot2.jpg)
+![haunt-that-house](../assets/okrobot/synth-bot.jpg)
 ![haunt-that-house](../assets/okrobot/diagram-final.png)
 ![haunt-that-house](../assets/okrobot/dialog.png)
-
-<!-- ![haunt-that-house](../assets/okrobot/bot.png) -->
