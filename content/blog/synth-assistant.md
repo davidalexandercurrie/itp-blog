@@ -2,7 +2,7 @@
 path: synth-assistant
 date: 2021-05-05T19:00:57.312Z
 title: Synth Assistant
-description: OK Robot Reboot Final
+description: OK Robot Reboot, ML4PCOMP, Signals Calls and Marches
 ---
 
 # Project Description
