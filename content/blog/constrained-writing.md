@@ -18,4 +18,5 @@ The words will be swapped with similar words using the [Datamuse API](https://ww
 *This was also a way for me to experiment with [MDX](https://mdxjs.com/). A markdown format that allows for integration of react components.*
 
 [.mdx file](https://raw.githubusercontent.com/davidalexandercurrie/itp-blog/main/content/blog/constrained-writing.md)
+
 [react component](https://raw.githubusercontent.com/davidalexandercurrie/itp-blog/master/src/components/textbox.js)
