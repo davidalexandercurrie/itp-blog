@@ -16,6 +16,8 @@ The css will be changed rhymically according to the values provided.
 
 <Regex01 />
 
+Nice!
 
+[Code](https://github.com/davidalexandercurrie/itp-blog/blob/master/src/components/regex01.js)
 
 
