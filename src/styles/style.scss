@@ -1,6 +1,6 @@
-@import "~@fontsource/fira-code/index.css";
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Tinos:ital@1&display=swap");
-$main-font: "Fira Code";
+@import '~@fontsource/fira-code/index.css';
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Tinos:ital@1&display=swap');
+$main-font: 'Fira Code';
 // $main-font: "Times New Roman";
 // $main-font: "Cinzel", serif;
 // $main-font: "Tinos", serif;
@@ -297,4 +297,19 @@ h3 a {
 
 .random-twitter {
   color: white;
+}
+
+.full-width-form {
+  width: 100% !important;
+}
+
+.float-right {
+  position: relative;
+  width: 10em;
+  left: calc(100% - 10em);
+}
+
+.color-blocks {
+  overflow: hidden;
+  white-space: nowrap;
 }
