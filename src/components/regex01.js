@@ -19,6 +19,7 @@ function useInterval(callback, delay) {
 
 export default function Regex01(props) {
   const [count, setCount] = useState(0);
+  const [params, setParams] = useState({});
   const [param1, setParam1] = useState(0);
   const [param2, setParam2] = useState(0);
   const [text, setText] = useState('');
@@ -38,9 +39,14 @@ export default function Regex01(props) {
     let param2 = text.replace(/(\w+\b)\s(\d+)\s(\d+)/g, (m, p1, p2, p3) => {
       return p3;
     });
-    setParam1(param1);
-    setParam2(param2);
-    setBlockColor(color);
+    setParams({
+      param1,
+      param2,
+      color,
+    });
+    // setParam1(param1);
+    // setParam2(param2);
+    // setBlockColor(color);
   };
   useEffect(() => {
     ref.current.innerHTML = expText;
@@ -58,19 +64,19 @@ export default function Regex01(props) {
   };
 
   useInterval(() => {
-    if (count % param1 == 0) {
-      colors.current.style.backgroundColor = blockColor;
+    if (count % params.param1 == 0) {
+      colors.current.style.backgroundColor = params.color;
     } else {
       colors.current.style.backgroundColor = 'white';
     }
-    if (count % param2 == 0) {
+    if (count % params.param2 == 0) {
       colors.current.style.color = 'pink';
       colors.current.style.border = '2px solid blue';
     } else {
       colors.current.style.color = 'black';
       colors.current.style.border = 'none';
     }
-    console.log(blockColor);
+    // console.log(params.color);
     setCount(count + 1);
   }, 250);
 
