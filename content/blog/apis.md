@@ -13,10 +13,21 @@ Pokemon API
 
 I repurposed what I did for last week to instead find images from the pokemon api!
 
+Type the name of a pokemon followed by two numbers
+
+e.g. `pikachu 4 7`
+
 <Regex02 />
 
 Nice!
 
 [Code](https://github.com/davidalexandercurrie/itp-blog/blob/master/src/components/regex01.js)
+
+Here is another project which I am working on at the moment that uses the sunrise API to sort through a list of youtube live streams and display the one that is closest to sunrise at the local time.
+
+[Sunrise](https://sandro-sunrise.herokuapp.com/)
+
+
+
 
 
