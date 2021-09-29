@@ -21,7 +21,7 @@ e.g. `pikachu 4 7`
 
 Nice!
 
-[Code](https://github.com/davidalexandercurrie/itp-blog/blob/master/src/components/regex01.js)
+[Code](https://github.com/davidalexandercurrie/itp-blog/blob/master/src/components/regex02.js)
 
 Here is another project which I am working on at the moment that uses the sunrise API to sort through a list of youtube live streams and display the one that is closest to sunrise at the local time.
 
