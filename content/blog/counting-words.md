@@ -13,6 +13,7 @@ Code:
 [server](https://github.com/davidalexandercurrie/word-counting-server)
 [client](https://github.com/davidalexandercurrie/itp-blog/blob/master/src/components/countingwords.js)
 
-Enter a twitter username and click submit:
+Enter a twitter username and click submit: 
+sorry the other buttons are broken 😇
 
 <CountingWords />
