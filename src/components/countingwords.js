@@ -7,13 +7,18 @@ const CountingWords = () => {
   let [keys, setKeys] = useState(null);
   let [counts, setCounts] = useState(null);
   let [text, setText] = useState('thecodingtrain');
+  let [noun, setNoun] = useState(false);
+  let [adjective, setAdjective] = useState(false);
+  let [mention, setMention] = useState(false);
+  let [emoji, setEmoji] = useState(false);
 
   const onTextChange = (e) => {
     setText(e.target.value);
   };
   const handleSubmit = (evt) => {
     evt.preventDefault();
-    socket.emit('msg', text);
+    let data = [[noun, adjective, mention, emoji], text];
+    socket.emit('msg', data);
   };
   console.log(counts);
   console.log(keys);
@@ -36,15 +41,57 @@ const CountingWords = () => {
             onChange={(e) => onTextChange(e)}
           />
         </label>
-        <input className="float-right" type="submit" value="Submit" />
+        <button
+          onClick={() => {
+            setAdjective(!adjective);
+          }}
+          className={`float-right ${adjective ? "btn-active" : null}`}
+        >
+          Adjectives
+        </button>
+        <br />
+        <button
+          onClick={() => {
+            setNoun(!noun);
+          }}
+          className={`float-right ${noun ? "btn-active" : null}`}
+        >
+          Nouns
+        </button>
+        <br />
+        <button
+          onClick={() => {
+            setMention(!mention);
+          }}
+  className={`float-right ${mention ? "btn-active" : null}`}
+        >
+          Mentions
+        </button>
+        <br />
+        <button
+          onClick={() => {
+            setEmoji(!emoji);
+          }}
+  className={`float-right ${emoji ? "btn-active" : null}`}
+        >
+          Emoji
+        </button>{' '}
+        <br />
+        <input
+          style={{ background: 'lightgreen' }}
+          className="float-right"
+          type="submit"
+          value="Submit"
+        />
       </form>
+
       {keys &&
         counts &&
         keys.map((element) => (
           <p
             style={{
               fontSize:
-                (containsEmoji(element) ? 40 : 18) + counts[element] * 3,
+                (containsEmoji(element) ? 20 : 18) + counts[element] * 3,
             }}
           >{`${element} ${counts[element]}`}</p>
         ))}
