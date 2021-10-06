@@ -16,7 +16,7 @@ const CountingWords = () => {
   return (
     <>
       <div>hellllllo</div>
-      {keys && keys.map((element) => <p>{`${element} ${counts[element]}`}</p>)}
+      {keys && keys.map((element) => <p>{`${element}`}</p>)}
     </>
   );
 };
