@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { io } from 'socket.io-client';
 const socket = io('https://word-counting-server.herokuapp.com/');
+const containsEmoji = require('contains-emoji');
 
 const CountingWords = () => {
   let [keys, setKeys] = useState(null);
@@ -41,7 +42,10 @@ const CountingWords = () => {
         counts &&
         keys.map((element) => (
           <p
-            style={{ fontSize: 18 + counts[element] * 3 }}
+            style={{
+              fontSize:
+                (containsEmoji(element) ? 40 : 18) + counts[element] * 3,
+            }}
           >{`${element} ${counts[element]}`}</p>
         ))}
     </>
