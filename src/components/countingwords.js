@@ -8,6 +8,7 @@ const CountingWords = () => {
     socket.emit('msg', 'hello');
     socket.on('event', (data) => {
       console.log(data);
+      setTweets(data.data);
     });
   }, []);
   return (
