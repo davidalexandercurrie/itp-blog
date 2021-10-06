@@ -1,8 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { io } from 'socket.io-client';
 const socket = io('https://word-counting-server.herokuapp.com/');
 
 const CountingWords = () => {
+  let [tweets, setTweets] = useState(null);
   useEffect(() => {
     socket.emit('msg', 'hello');
     socket.on('event', (data) => {
@@ -12,6 +13,7 @@ const CountingWords = () => {
   return (
     <>
       <div>hellllllo</div>
+      {tweets && tweets.map((element) => <p>{element.text}</p>)}
     </>
   );
 };
