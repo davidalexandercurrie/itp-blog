@@ -41,7 +41,7 @@ const CountingWords = () => {
         counts &&
         keys.map((element) => (
           <p
-            style={{ fontSize: counts[element] * 3 }}
+            style={{ fontSize: 18 + counts[element] * 3 }}
           >{`${element} ${counts[element]}`}</p>
         ))}
     </>

@@ -8,8 +8,11 @@ description: Programming A-
 
 import CountingWords from '../../src/components/countingwords.js'
 
-Counting Words
+Code:
 
-Enter a twitter username and click submit
+[server](https://github.com/davidalexandercurrie/word-counting-server)
+[client](https://github.com/davidalexandercurrie/itp-blog/blob/master/src/components/countingwords.js)
+
+Enter a twitter username and click submit:
 
 <CountingWords />
