@@ -14,7 +14,8 @@ const CountingWords = () => {
   return (
     <>
       <div>hellllllo</div>
-      {tweets && tweets.map((element) => <p>{element.text}</p>)}
+      {/* {tweets && tweets.map((element) => <p>{element.text}</p>)} */}
+      {tweets && <div>tweets</div>}
     </>
   );
 };
