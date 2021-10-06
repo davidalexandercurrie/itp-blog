@@ -10,4 +10,6 @@ import CountingWords from '../../src/components/countingwords.js'
 
 Counting Words
 
+Enter a twitter username and click submit
+
 <CountingWords />
