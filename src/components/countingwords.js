@@ -5,7 +5,7 @@ const socket = io('https://word-counting-server.herokuapp.com/');
 const CountingWords = () => {
   let [keys, setKeys] = useState(null);
   let [counts, setCounts] = useState(null);
-  let [text, setText] = useState(null);
+  let [text, setText] = useState('thecodingtrain');
 
   const onTextChange = (e) => {
     setText(e.target.value);
@@ -37,7 +37,9 @@ const CountingWords = () => {
         </label>
         <input className="float-right" type="submit" value="Submit" />
       </form>
-      {keys && keys.map((element) => <p>{`${element}`}</p>)}
+      {keys &&
+        counts &&
+        keys.map((element) => <p>{`${element} ${counts[element]}`}</p>)}
     </>
   );
 };
