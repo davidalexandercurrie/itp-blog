@@ -45,7 +45,7 @@ const CountingWords = () => {
           onClick={() => {
             setAdjective(!adjective);
           }}
-          className={`float-right ${adjective ? "btn-active" : null}`}
+          className={`float-right ${adjective ? 'btn-active' : null}`}
         >
           Adjectives
         </button>
@@ -54,7 +54,7 @@ const CountingWords = () => {
           onClick={() => {
             setNoun(!noun);
           }}
-          className={`float-right ${noun ? "btn-active" : null}`}
+          className={`float-right ${noun ? 'btn-active' : null}`}
         >
           Nouns
         </button>
@@ -63,7 +63,7 @@ const CountingWords = () => {
           onClick={() => {
             setMention(!mention);
           }}
-  className={`float-right ${mention ? "btn-active" : null}`}
+          className={`float-right ${mention ? 'btn-active' : null}`}
         >
           Mentions
         </button>
@@ -72,7 +72,7 @@ const CountingWords = () => {
           onClick={() => {
             setEmoji(!emoji);
           }}
-  className={`float-right ${emoji ? "btn-active" : null}`}
+          className={`float-right ${emoji ? 'btn-active' : null}`}
         >
           Emoji
         </button>{' '}
@@ -91,7 +91,7 @@ const CountingWords = () => {
           <p
             style={{
               fontSize:
-                (containsEmoji(element) ? 20 : 18) + counts[element] * 3,
+                (containsEmoji(element) ? 40 : 18) + counts[element] * 2,
             }}
           >{`${element} ${counts[element]}`}</p>
         ))}
