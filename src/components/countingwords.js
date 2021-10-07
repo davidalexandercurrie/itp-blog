@@ -13,9 +13,13 @@ const CountingWords = () => {
   let [emoji, setEmoji] = useState(false);
 
   function spanClick(event) {
-    let data = [[false, false, false, false], event.target.innerText];
-    socket.emit('msg', data);
-    setText(event.target.innerText);
+    if (event.target.innerText.charAt(0) === '@') {
+      let str = event.target.innerText.subString(1);
+
+      let data = [[false, false, false, false], str];
+      socket.emit('msg', data);
+      setText(str);
+    }
   }
 
   function MouseOver(event) {
