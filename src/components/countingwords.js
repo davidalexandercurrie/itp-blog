@@ -21,9 +21,9 @@ const CountingWords = () => {
       setAdjective(false);
       setEmoji(false);
       setMention(false);
+      setText(str);
       let data = [[noun, adjective, mention, emoji], text];
       socket.emit('msg', data);
-      setText(str);
     }
   }
 
