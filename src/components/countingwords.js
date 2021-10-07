@@ -42,6 +42,7 @@ const CountingWords = () => {
           />
         </label>
         <button
+          type="button"
           onClick={() => {
             setAdjective(!adjective);
           }}
@@ -51,6 +52,7 @@ const CountingWords = () => {
         </button>
         <br />
         <button
+          type="button"
           onClick={() => {
             setNoun(!noun);
           }}
@@ -60,6 +62,7 @@ const CountingWords = () => {
         </button>
         <br />
         <button
+          type="button"
           onClick={() => {
             setMention(!mention);
           }}
@@ -69,6 +72,7 @@ const CountingWords = () => {
         </button>
         <br />
         <button
+          type="button"
           onClick={() => {
             setEmoji(!emoji);
           }}
