@@ -88,17 +88,19 @@ const CountingWords = () => {
           value="Submit"
         />
       </form>
-
-      {keys &&
-        counts &&
-        keys.map((element) => (
-          <p
-            style={{
-              fontSize:
-                (containsEmoji(element) ? 40 : 18) + counts[element] * 2,
-            }}
-          >{`${element} ${counts[element]}`}</p>
-        ))}
+      <p>
+        {keys &&
+          counts &&
+          keys.map((element) => (
+            <span
+              style={{
+                border: `2px solid black`,
+                fontSize:
+                  (containsEmoji(element) ? 40 : 18) + counts[element] * 2,
+              }}
+            >{`${element} ${counts[element]} `}</span>
+          ))}
+      </p>
     </>
   );
 };
