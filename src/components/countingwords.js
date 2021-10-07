@@ -12,6 +12,19 @@ const CountingWords = () => {
   let [mention, setMention] = useState(false);
   let [emoji, setEmoji] = useState(false);
 
+  function spanClick(event) {
+    let data = [[false, false, false, false], event.target.innerText];
+    socket.emit('msg', data);
+    setText(event.target.innerText);
+  }
+
+  function MouseOver(event) {
+    event.target.style.background = 'white';
+  }
+  function MouseOut(event) {
+    event.target.style.background = 'none';
+  }
+
   const onTextChange = (e) => {
     setText(e.target.value);
   };
@@ -88,11 +101,15 @@ const CountingWords = () => {
           value="Submit"
         />
       </form>
+
       <p>
         {keys &&
           counts &&
           keys.map((element) => (
             <span
+              onMouseEnter={MouseOver}
+              onMouseLeave={MouseOut}
+              onClick={spanClick}
               style={{
                 display: 'inline-block',
                 border: `2px solid black`,
