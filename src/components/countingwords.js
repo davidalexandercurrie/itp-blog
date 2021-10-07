@@ -17,13 +17,14 @@ const CountingWords = () => {
       let str = event.target.innerText.replace(/(@)(\w+)(.*)/g, (m, p1, p2) => {
         return p2;
       });
+
+      let data = [[false, false, false, false], str];
+      socket.emit('msg', data);
       setNoun(false);
       setAdjective(false);
       setEmoji(false);
       setMention(false);
       setText(str);
-      let data = [[noun, adjective, mention, emoji], text];
-      socket.emit('msg', data);
     }
   }
 
