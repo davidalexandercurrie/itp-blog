@@ -42,12 +42,13 @@ const CountingWords = () => {
     let data = [[noun, adjective, mention, emoji], text];
     socket.emit('msg', data);
   };
-  console.log(counts);
-  console.log(keys);
+
   useEffect(() => {
     socket.on('event', (data) => {
       setKeys(data.keys);
       setCounts(data.counts);
+      console.log(counts);
+      console.log(keys);
     });
   }, []);
   return (
