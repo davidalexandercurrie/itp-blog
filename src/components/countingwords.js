@@ -48,8 +48,7 @@ const CountingWords = () => {
     socket.on('event', (data) => {
       setKeys(data.keys);
       setCounts(data.counts);
-      console.log(counts);
-      console.log(keys);
+      console.log('data receievd: ', data);
     });
   }, []);
   return (
