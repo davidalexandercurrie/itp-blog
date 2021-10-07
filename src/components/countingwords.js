@@ -15,8 +15,11 @@ const CountingWords = () => {
   function spanClick(event) {
     if (event.target.innerText.charAt(0) === '@') {
       let str = event.target.innerText.subString(1);
-
-      let data = [[false, false, false, false], str];
+      setNoun(false);
+      setAdjective(false);
+      setEmoji(false);
+      setMention(false);
+      let data = [[noun, adjective, mention, emoji], text];
       socket.emit('msg', data);
       setText(str);
     }
