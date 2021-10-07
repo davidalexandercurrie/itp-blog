@@ -94,6 +94,7 @@ const CountingWords = () => {
           keys.map((element) => (
             <span
               style={{
+                display: 'inline-block',
                 border: `2px solid black`,
                 fontSize:
                   (containsEmoji(element) ? 40 : 18) + counts[element] * 2,
