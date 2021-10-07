@@ -15,6 +15,4 @@ Code:
 
 Enter a twitter username and click submit: 
 
-Sorry the other buttons are broken 😇
-
 <CountingWords />
