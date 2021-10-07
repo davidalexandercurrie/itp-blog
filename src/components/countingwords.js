@@ -14,7 +14,7 @@ const CountingWords = () => {
 
   function spanClick(event) {
     if (event.target.innerText.charAt(0) === '@') {
-      let str = event.target.innerText.replace(/(@)(\w+)/g, (m, p1, p2) => {
+      let str = event.target.innerText.replace(/(@)(\w+)(.*)/g, (m, p1, p2) => {
         return p2;
       });
       setNoun(false);
