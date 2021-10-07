@@ -304,7 +304,7 @@ h3 a {
 }
 
 .float-right {
-  position: relative;
+  // position: relative;
   width: 10em;
   left: calc(100% - 10em);
 }
@@ -316,4 +316,27 @@ h3 a {
 
 .btn-active {
   background: lightblue;
+}
+
+.username-form {
+  width: 50%;
+  display: inline-block;
+  height: 3em;
+}
+.username-form {
+  textarea {
+    height: 3em;
+    width: 10em;
+  }
+}
+.profile-image {
+  height: 50%;
+  width: 20em;
+  float: left;
+  margin: 0;
+}
+.form-container-twitter {
+  display: inline-block;
+  padding: none;
+  width: 100%;
 }

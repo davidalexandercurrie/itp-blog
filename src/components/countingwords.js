@@ -11,6 +11,7 @@ const CountingWords = () => {
   let [adjective, setAdjective] = useState(false);
   let [mention, setMention] = useState(false);
   let [emoji, setEmoji] = useState(false);
+  let [profile, setProfile] = useState(text);
 
   function spanClick(event) {
     if (event.target.innerText.charAt(0) === '@') {
@@ -25,6 +26,7 @@ const CountingWords = () => {
       setEmoji(false);
       setMention(false);
       setText(str);
+      setProfile(text);
     }
   }
 
@@ -42,6 +44,7 @@ const CountingWords = () => {
     evt.preventDefault();
     let data = [[noun, adjective, mention, emoji], text];
     socket.emit('msg', data);
+    setProfile(text);
   };
 
   useEffect(() => {
@@ -54,62 +57,68 @@ const CountingWords = () => {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <label>
-          <textarea
-            className="full-width-form"
-            cols="30"
-            rows="10"
-            type="text"
-            value={text}
-            onChange={(e) => onTextChange(e)}
+        <div className="form-container-twitter">
+          <img
+            className="profile-image"
+            src={`https://unavatar.io/twitter/${profile}`}
+            alt="profile image of searched twitter account"
           />
-        </label>
-        <button
-          type="button"
-          onClick={() => {
-            setAdjective(!adjective);
-          }}
-          className={`float-right ${adjective ? 'btn-active' : null}`}
-        >
-          Adjectives
-        </button>
-        <br />
-        <button
-          type="button"
-          onClick={() => {
-            setNoun(!noun);
-          }}
-          className={`float-right ${noun ? 'btn-active' : null}`}
-        >
-          Nouns
-        </button>
-        <br />
-        <button
-          type="button"
-          onClick={() => {
-            setMention(!mention);
-          }}
-          className={`float-right ${mention ? 'btn-active' : null}`}
-        >
-          Mentions
-        </button>
-        <br />
-        <button
-          type="button"
-          onClick={() => {
-            setEmoji(!emoji);
-          }}
-          className={`float-right ${emoji ? 'btn-active' : null}`}
-        >
-          Emoji
-        </button>{' '}
-        <br />
-        <input
-          style={{ background: 'lightgreen' }}
-          className="float-right"
-          type="submit"
-          value="Submit"
-        />
+          <label className="username-form">
+            <textarea
+              cols="30"
+              rows="10"
+              type="text"
+              value={text}
+              onChange={(e) => onTextChange(e)}
+            />
+          </label>
+          <button
+            type="button"
+            onClick={() => {
+              setAdjective(!adjective);
+            }}
+            className={`float-right ${adjective ? 'btn-active' : null}`}
+          >
+            Adjectives
+          </button>
+          <br />
+          <button
+            type="button"
+            onClick={() => {
+              setNoun(!noun);
+            }}
+            className={`float-right ${noun ? 'btn-active' : null}`}
+          >
+            Nouns
+          </button>
+          <br />
+          <button
+            type="button"
+            onClick={() => {
+              setMention(!mention);
+            }}
+            className={`float-right ${mention ? 'btn-active' : null}`}
+          >
+            Mentions
+          </button>
+          <br />
+          <button
+            type="button"
+            onClick={() => {
+              setEmoji(!emoji);
+            }}
+            className={`float-right ${emoji ? 'btn-active' : null}`}
+          >
+            Emoji
+          </button>{' '}
+          <br />
+          <input
+            style={{ background: 'lightgreen' }}
+            className="float-right"
+            type="submit"
+            value="Submit"
+          />
+        </div>
       </form>
 
       <p>
