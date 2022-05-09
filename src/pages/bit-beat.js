@@ -1,11 +1,14 @@
 import React from 'react';
 import '../styles/style.scss';
-
+import logo from '../../content/assets/thumbnail-01.jpg';
 export default function itpThesis() {
   return (
     <>
       <div style={{ padding: '2em' }}>
+        <img style={{ float: 'right' }} src={logo} alt="bit beat logo" />
         <h1>---bit beat---</h1>
+        <br />
+        <br />
         <p>
           ---bit beat--- is a minimalist live coding tool made with{' '}
           <a href="https://100r.co/site/uxn.html">UXN</a>
@@ -26,11 +29,11 @@ export default function itpThesis() {
           <a href="https://www.libsdl.org/download-2.0.php">SDL2</a> installed.
           UXN uses this to interact with controllers, keyboard, mouse etc.
         </li>
+        <br />
         <p>
-          Put the uxnemu file and the beat_bit1.0.rom file in the same folder
-          and then from the command line run this command{' '}
+          Put the uxnemu file and the beat_bit1.0.rom file in the same folder{' '}
         </p>
-
+        <p>Run this from command line inside the folder</p>
         <pre>
           <code>./uxnemu ./beat_bit1.0.rom</code>
         </pre>
