@@ -1,9 +1,9 @@
-import React from "react"
-import "../styles/style.scss"
-import Card from "../components/card"
-import projectData from "../utils/projectData.json"
-import { Link } from "gatsby"
-import { RiArrowLeftLine } from "react-icons/ri"
+import React from 'react';
+import '../styles/style.scss';
+import Card from '../components/card';
+import projectData from '../utils/projectData.json';
+import { Link } from 'gatsby';
+import { RiArrowLeftLine } from 'react-icons/ri';
 
 export default function projects() {
   return (
@@ -20,12 +20,12 @@ export default function projects() {
         <div className="project-sections">
           <div className="project-cards">
             {projectData.data.map((project) => {
-              return <Card project={project} />
+              return <Card project={project} />;
             })}
           </div>
         </div>
         <Link to="/liminal">
-          <a>Check out other experiments</a>
+          <a>Other experiments</a>
         </Link>
         <br />
         <Link to="/">
@@ -33,5 +33,5 @@ export default function projects() {
         </Link>
       </div>
     </>
-  )
+  );
 }
