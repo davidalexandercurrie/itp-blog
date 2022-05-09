@@ -1,6 +1,14 @@
 {
   "data": [
     {
+      "title": "Bit Beat",
+      "description": "A Live Coding language written in UXN",
+      "links": {
+        "github": "https://github.com/davidalexandercurrie/uxn-hex-beat"
+      },
+      "videoUrl": "https://www.youtube.com/embed/CoimA7ydIZg"
+    },
+    {
       "title": "Tele-techno-bot",
       "description": "A musical tele-robotic work that lets a user phone in to the robot that collaborates musically with dial-tones and text notification sounds",
       "links": {
