@@ -19,13 +19,13 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     {
-      resolve: "gatsby-plugin-local-search",
+      resolve: 'gatsby-plugin-local-search',
       options: {
-        name: "blog",
-        engine: "flexsearch",
+        name: 'blog',
+        engine: 'flexsearch',
         engineOptions: {
-          encode: "icase",
-          tokenize: "forward",
+          encode: 'icase',
+          tokenize: 'forward',
           async: false,
         },
         query: `
@@ -45,11 +45,11 @@ module.exports = {
             }
           }
         `,
-        ref: "id",
-        index: ["title", "rawBody"],
-        store: ["id", "slug", "date", "title", "excerpt", "description"],
+        ref: 'id',
+        index: ['title', 'rawBody'],
+        store: ['id', 'slug', 'date', 'title', 'excerpt', 'description'],
         normalizer: ({ data }) =>
-          data.allMdx.nodes.map(node => ({
+          data.allMdx.nodes.map((node) => ({
             id: node.id,
             slug: node.fields.slug,
             rawBody: node.rawBody,
@@ -79,10 +79,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
-        extensions: [".mdx", ".md"],
+        extensions: ['.mdx', '.md'],
         gatsbyRemarkPlugins: [
           {
-            resolve: "gatsby-remark-embed-video",
+            resolve: 'gatsby-remark-embed-video',
             options: {
               width: 800,
               ratio: 1.77, // Optional: Defaults to 16/9 = 1.77
@@ -91,12 +91,12 @@ module.exports = {
               noIframeBorder: true, //Optional: Disable insertion of <style> border: 0
               urlOverrides: [
                 {
-                  id: "youtube",
-                  embedURL: videoId =>
+                  id: 'youtube',
+                  embedURL: (videoId) =>
                     `https://www.youtube-nocookie.com/embed/${videoId}`,
                 },
               ], //Optional: Override URL of a service provider, e.g to enable youtube-nocookie support
-              containerClass: "embedVideo-container", //Optional: Custom CSS class for iframe container, for multiple classes separate them by space
+              containerClass: 'embedVideo-container', //Optional: Custom CSS class for iframe container, for multiple classes separate them by space
             },
           },
           {
@@ -115,7 +115,7 @@ module.exports = {
             resolve: `gatsby-remark-vscode`,
             options: {
               theme: `Radical`, // From package.json: contributes.themes[0].label
-              extensions: ["radical-vscode"], // From package.json: name
+              extensions: ['radical-vscode'], // From package.json: name
             },
           },
           {
@@ -155,4 +155,4 @@ module.exports = {
       },
     },
   ],
-}
+};
