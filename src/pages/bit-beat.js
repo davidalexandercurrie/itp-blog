@@ -52,6 +52,9 @@ export default function itpThesis() {
 
         <h3>Commands</h3>
         <p>
+          <span style={{ background: 'white' }}>F1</span> # increase screen size
+        </p>
+        <p>
           <span style={{ background: 'white' }}>Tab</span> # switches between
           the four voices
         </p>
