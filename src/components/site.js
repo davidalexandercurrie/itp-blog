@@ -1,7 +1,7 @@
-import React from "react"
-import { Link } from "gatsby"
-import Button from "../components/button"
-import TV from "../components/tv"
+import React from 'react';
+import { Link } from 'gatsby';
+import Button from '../components/button';
+import TV from '../components/tv';
 
 export default function site() {
   return (
@@ -39,9 +39,17 @@ export default function site() {
             🗑Liminal
           </Button>
         </Link>
+        <Link to="/bit-beat/">
+          <Button
+            style={{ marginTop: 0, marginBottom: 0 }}
+            background="lightgrey"
+          >
+            👾Bit Beat
+          </Button>
+        </Link>
       </div>
       <div className="lower-bar"></div>
       <TV />
     </>
-  )
+  );
 }

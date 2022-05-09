@@ -1,12 +1,24 @@
 import React from 'react';
 import '../styles/style.scss';
 import logo from '../../content/assets/thumbnail-01.jpg';
+import hero from '../../content/assets/hero-01.jpg';
+import { Link } from 'gatsby';
+import { RiArrowLeftLine } from 'react-icons/ri';
 export default function itpThesis() {
   return (
     <>
       <div style={{ padding: '2em' }}>
         <img style={{ float: 'right' }} src={logo} alt="bit beat logo" />
+        <div className="back-arrow">
+          <Link to="/">
+            <RiArrowLeftLine />
+          </Link>
+        </div>
         <h1>---bit beat---</h1>
+        <img
+          src={hero}
+          alt="an image of bit beat running side by side from command line and a nintendo ds"
+        />
         <br />
         <br />
         <p>
