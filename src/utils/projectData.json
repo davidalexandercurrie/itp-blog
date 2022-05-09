@@ -2,9 +2,9 @@
   "data": [
     {
       "title": "Bit Beat",
-      "description": "A Live Coding language written in UXN",
       "links": {
-        "github": "https://github.com/davidalexandercurrie/uxn-hex-beat"
+        "github": "https://github.com/davidalexandercurrie/uxn-hex-beat",
+        "bit-beat website": "https://davidalexandercurrie.com/bit-beat"
       },
       "videoUrl": "https://www.youtube.com/embed/CoimA7ydIZg"
     },

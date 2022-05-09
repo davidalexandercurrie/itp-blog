@@ -27,7 +27,7 @@ export default function itpThesis() {
         </p>
         <p>To use it you will need the following:</p>
         <li>
-          The ---beat bit--- ROM. Download{' '}
+          The ---bit beat--- ROM. Download{' '}
           <a href="https://github.com/davidalexandercurrie/uxn-hex-beat/releases/tag/rom">
             here
           </a>
