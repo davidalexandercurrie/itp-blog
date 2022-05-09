@@ -73,7 +73,7 @@ export default function itpThesis() {
         <p>
           <span style={{ background: 'white' }}>waveform: i 1</span> # the
           letter i followed by a single digit that represents the waveform.
-          Currently: #01=sin #02=tri #03=saw #04 =violin #05=piano #06=noize
+          Currently: #01=sin #02=tri #03=saw #04=violin #05=piano #06=noize
           #07=noise-rand #08=kick-drum
         </p>
         <p>
