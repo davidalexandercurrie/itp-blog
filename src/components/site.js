@@ -7,28 +7,20 @@ export default function site() {
   return (
     <>
       <div className="main-button-container">
-        <Link to="/blog/">
+        {/* <Link to="/blog/">
           <Button
             style={{ marginTop: 0, marginBottom: 0 }}
             background="lightgrey"
           >
             📓Blog
           </Button>
-        </Link>
+        </Link> */}
         <Link to="/projects/">
           <Button
             style={{ marginTop: 0, marginBottom: 0 }}
             background="lightgrey"
           >
             📂Projects
-          </Button>
-        </Link>
-        <Link to="/contact/">
-          <Button
-            style={{ marginTop: 0, marginBottom: 0 }}
-            background="lightgrey"
-          >
-            𝌕Contact
           </Button>
         </Link>
         <Link to="/liminal/">
@@ -45,6 +37,14 @@ export default function site() {
             background="lightgrey"
           >
             👾Bit Beat
+          </Button>
+        </Link>
+        <Link to="/contact/">
+          <Button
+            style={{ marginTop: 0, marginBottom: 0 }}
+            background="lightgrey"
+          >
+            𝌕Contact
           </Button>
         </Link>
       </div>
